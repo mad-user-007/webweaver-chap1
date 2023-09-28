@@ -1,0 +1,400 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> Landing Page </title>
+
+	<!-- Bootstrap Css -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+	<!-- Bootstrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+	<!-- Bootstrap Js -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+
+	<style type="text/css">
+		.quotation {
+			color: #FD6F00;
+			font-weight: bold;
+			font-size: 25px;
+		}
+
+		.carousel-indicators button {
+			width: 20px;
+			height: 10px;
+			background-color: #dee2e6;
+			border-radius: 20%;
+		}
+		.carousel-indicators .active {
+			width: 20px;
+			height: 10px;
+			background-color: #FD6F00;
+			border: none;
+		}
+		.carousel-indicators {
+			bottom: -100px;
+		}
+		h1 {
+			font-weight: 700;
+		}
+		h4, h5 {
+			font-weight: 600;
+		}
+		.onPhotoRect {
+			position: absolute;
+			width: 60%;
+			left: 20%;
+			top: 10%;
+			height: 12%;
+			background-color: #FD6F00;
+			opacity: 0.5;
+		}
+		.progress-bar::after {
+			content: "";
+			display: block;
+			width: 10px;
+			height: 10px;
+			background-color: #FD6F00;
+		}
+		
+		
+	</style>
+
+</head>
+<body>
+{% load static %}
+<div class="container w-55">
+	<nav class="navbar navbar-expand-lg">
+		<div class="container-fluid">
+			<div class="d-flex flex-row">
+				<div>
+					<svg width="50px" height="50px">
+						<circle cx="25" cy="25" r="25" fill="#fd6f00" />
+						<text style="font-weight: bold;" font-family="Allura, cursive" fill="white" font-size="30px" x="50%" y="55%" text-anchor="middle" alignment-baseline="central">MK</text>
+					</svg>
+				</div>
+				<a class="ms-3 navbar-brand" href="#" style="font-size: 30px;"><span style="font-weight: bold;">M</span><span style="color:#545454;">akhan</span></a>
+			</div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    		</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ms-auto">
+				<li class="nav-item">
+					<a href="#" aria-current="page" class="active nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">About Me</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Services</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Testimonials</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link">Contact</a>
+				</li>
+				<li class="nav-item">
+					<a href="#" class="nav-link rounded" style="background-color: #FD6F00; border-radius: 2px; color:white;">Download CV</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+
+
+	<!--                INTRO STARTS           -->
+
+	<div class="container mt-5">
+		<div class="row">
+		<div class="col-lg-6">
+			<div class="d-flex flex-column justify-content-end">
+				<div>
+					<h6> Hi, I am </h6>
+					<h5 class="mb-0" style="color:#FD6F00;"> Mukarrabeen Khan </h5>
+					<h1 class="display-1" style="font-weight: bold; font-family:Poppins;"> UI & UX </h1>
+					<h1 class="text-end display-1" style="font-weight:bold; font-family:'Poppins';"> Designer </h1>
+				</div>
+				<div>
+					<p style="font-family: 'Verdana';">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestilum cmentum leo a nunc vulputate, id elementum ante feugiat. Maur nec consectetur mau sed interdum massa. Cras id ornare orci, et porttitor ex. Sed varius magna non odio laoreet, eu pellentesque orci facilisis. Aliquet done suired kama. </p>
+				</div>
+				<div>
+					<button type="button" class="btn ps-5 pe-5" style="background-color: #FD6F00; color: white;">Hire Me</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6" style="position: relative;">
+			<div class="onPhotoRect"></div>
+			<div class="d-flex flex-column align-items-center">
+				<div class="d-flex flex-row justify-content-center">
+					<img class="w-75 h-75" src="{% static 'intro_photo.png' %}" />
+				</div>
+				<div class="mt-3 d-flex flex-row justify-content-center">	
+					<a class="h4 p-2 bi bi-facebook"></a>
+					<a class="h4 p-2 bi bi-instagram"></a>
+					<a class="h4 p-2 bi bi-twitter"></a>
+					<a class="h4 p-2 bi bi-linkedin"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--                     SKILL STATS STARTS    				  -->
+	<div class="mt-5 row">
+		<div class="pe-5 pb-5 col-lg-6" style="position: relative;">
+			<div class="onphotoRect"></div>
+			<div class="d-flex flex-column">
+				<img class="w-100 h-100" src="{% static 'skill_stat_photo.png' %}" />
+			</div>
+		</div>
+		<div class="p-2 col-lg-6">
+			 <h1 style="font-family: 'Poppins';">About Me</h1>
+			 <p>Nullam erat est, aliquam id lorem at, lacinia imperdiet diam. Mauris cursus erat sapien, eget cursus ex iaculis sit amet. Curabitur tempus elit id accumsan ultricies. Morbi porta efficitur justo quis semper. Etiam iaculis dolor vitae mauris feugiat, quis volutpat nisl pulvinar.</p>
+
+			 <!-- Skill stats -->
+			<div class="d-block">
+			<h5> UX </h5>
+			<div class="progress mt-3 mb-3" style="height:10px;">
+				<div class="progress-bar" style="width:90%; background-color: #FD6F00;">
+				</div>
+			</div>
+
+			<h5> Website Design </h5>
+			<div class="progress mt-3 mb-3" style="height:10px;">
+				<div class="progress-bar" style="width:85%; background-color: #FD6F00;"></div>
+			</div>
+
+			<h5> App Design </h5>
+			<div class="progress mt-3 mb-3" style="height:10px;">
+				<div class="progress-bar" style="width:95%; background-color: #FD6F00;"></div>
+			</div>
+
+			<h5> Graphic Design </h5>
+			<div class="progress mt-3 mb-3" style="height:10px;">
+				<div class="progress-bar" style="width:90%; background-color: #FD6F00;"></div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<!-- 					SERVICES STARTS						  -->
+
+	<div class="mt-5 d-flex flex-column justify-content-center align-items-center">
+		<div>
+			<h1 style="font-family: 'Poppins';">Services</h1>
+		</div>
+		<div class="w-75 p-2">
+			<p class="text-center">Duis vulputate nunc sit amet dolor sagittis tristique. Nam imperdiet libero sed auctor lacinia. Ut vitae tristique neque. In finibus ornare nisi fringilla varius. Etiam iaculis dolor vitae mauris. </p>
+		</div>
+		<div class="d-flex flex-sm-column flex-lg-row gap-3">
+			<div class="pt-5 ps-3 pe-3 mb-3 bg-light rounded">
+				<img class="w-23 h-25" src="{% static 'ui_ux.png' %}" />
+				<h4 style="font-family: 'Poppins';" class="mt-3">UI/UX </h4>
+				<p style="font-family: 'Verdana';">Lorem ipsum dolor sit amet. Consectetur adipiscing elit vestilum cmentum leo</p>
+			</div>
+			<div class="pt-5 ps-3 pe-3 mb-3 bg-light rounded">
+				<img class="w-23 h-25" src="{% static 'web_design.png' %}" />
+				<h4 style="font-family: 'Poppins';" class="mt-3">Web Design</h4>
+				<p style="font-family: 'Verdana';">Lorem ipsum dolor sit amet. Consectetur adipiscing elit vestilum cmentum leo</p>
+			</div>
+			<div class="pt-5 ps-3 pe-3 mb-3 bg-light rounded">
+				<img class="w-23 h-25" src="{% static 'app_design.png' %}" />
+				<h4 style="font-family: 'Poppins';" class="mt-3">App Design</h4>
+				<p style="font-family: 'Verdana';">Lorem ipsum dolor sit amet. Consectetur adipiscing elit vestilum cmentum leo</p>
+			</div>
+			<div class="pt-5 ps-3 pe-3 mb-3 bg-light rounded">
+				<img class="w-23 h-25" src="{% static 'graphic_design.png' %}" />
+				<h4 style="font-family: 'Poppins';" class="mt-3">Graphic Design</h4>
+				<p style="font-family: 'Verdana';">Lorem ipsum dolor sit amet. Consectetur adipiscing elit vestilum cmentum leo</p>
+			</div>
+	</div>
+	</div>
+
+	<!-- 						 PROJECTS STARTS 				-->
+	<div class="d-flex flex-column justify-content-center align-items-center mt-5">
+		<div class="mt-5">
+			<h1 style="font-family: 'Poppins';">My Projects</h1>
+		</div>
+		<div class="w-75 p-2">
+			<p class="text-center">Duis vulputate nunc sit amet dolor sagittis tristique. Nam imperdiet libero sed auctor lacinia. Ut vitae tristique neque. In finibus ornare nisi fringilla varius. Etiam iaculis dolor vitae mauris </p>
+		</div>
+		<div class="mt-3 mb-5">
+			<ul class="nav">
+				<li class="m-2 nav-item bg-light border ps-3 pe-3 pt-1 pb-1 rounded" style="border-color: #e3e3e3;">All</li>
+				<li class="m-2 nav-item bg-light border ps-3 pe-3 pt-1 pb-1 rounded" style="border-color: #e3e3e3;">UI/UX</li>
+				<li class="m-2 nav-item border text-light ps-3 pe-3 pt-1 pb-1 rounded" style="border-color: #e3e3e3; background-color: #FD6F00;">Web Design</li>
+				<li class="m-2 nav-item bg-light border ps-3 pe-3 pt-1 pb-1 rounded" style="border-color: #e3e3e3;">App Design</li>
+				<li class="m-2 nav-item bg-light border ps-3 pe-3 pt-1 pb-1 rounded" style="border-color: #e3e3e3;">Graphic Design</li>
+			</ul>
+		</div>
+		<div class="mb-5 row align-items-center justify-content-center">
+			<div class="col-lg-4 mb-3">
+				<img class="img-fluid rounded" src="{% static 'project_1.png' %}" />
+				<p class="mt-3 mb-2" style="color:#FD6F00; font-family: 'Verdana';"> Web Design </p>
+				<h5 style="font-family: Poppins;"> AirCalling Landing Page Design </h5>
+			</div>
+			<div class="col-lg-4 mb-3">
+				<img class="img-fluid rounded" src="{% static 'project_2.png' %}" />
+				<p class="mt-3 mb-2" style="color:#FD6F00; font-family: 'Verdana';"> Web Design </p>
+				<h5 style="font-family: Poppins;"> Business Landing Page Design </h5>
+			</div>
+			<div class="col-lg-4 mb-3">
+				<img class="img-fluid rounded" src="{% static 'project_3.png' %}" />
+				<p class="mt-3 mb-2" style="color:#FD6F00; font-family: 'Verdana';"> Web Design </p>
+				<h5 style="font-family: Poppins;"> Ecom Landing Page Design </h5>
+			</div>
+		</div>
+	</div>
+
+	<!-- 					 TESTIMONIALS STARTS					 -->
+	<div class="mt-5 d-flex flex-column justify-content-center align-items-center">
+		<div><h1 style="font-family: 'Poppins';">Testimonials</h1></div>
+		<div class="w-75 mb-5"><p class="text-center" style="font-family: 'Verdana';">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Etiam iaculis dolor vitae mauris</p></div>
+
+		<!-- 					Carousel 				-->
+		<div class="container w-75 ms-auto me-auto">
+			<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="testimonial-content d-flex flex-sm-column flex-lg-row justify-content-center align-items-center gap-5 bg-light rounded p-5">
+							<img class="flex-sm-shrink-1 img-fluid" src="{% static 'comment1.png' %}" />
+							<div class="flex-sm-shrink-1">
+							<p class="testimonial_comment"><span class="quotation">&#12318;</span>Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.<span class="quotation"> &#12319;</span></p>
+							<h6>Name</h6>
+							<p> CEO </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="testimonial-content d-flex flex-sm-column flex-lg-row justify-content-center align-items-center gap-5 bg-light rounded p-5">
+							<img class="img-fluid" src="{% static 'comment2.png' %}" />
+							<div>
+							<p class="testimonial_comment"><span class="quotation">&#12318;</span>Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.<span class="quotation"> &#12319;</span></p>
+							<h6>Name</h6>
+							<p> CEO </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="testimonial-content d-flex flex-sm-column flex-lg-row justify-content-center align-items-center gap-5 bg-light rounded p-5">
+							<img class="img-fluid" src="{% static 'comment1.png' %}" />
+							<div>
+							<p class="testimonial_comment"><span class="quotation">&#12318;</span>Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.<span class="quotation"> &#12319;</span></p>
+							<h6>Name</h6>
+							<p> CEO </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="testimonial-content d-flex flex-sm-column flex-lg-row justify-content-center align-items-center gap-5 bg-light rounded p-5">
+							<img class="img-fluid" src="{% static 'comment2.png' %}" />
+							<div>
+							<p class="testimonial_comment"><span class="quotation">&#12318;</span>Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumsan. Id leo urna velit neque mattis id tellus arcu condimentum. Augue dictum dolor elementum convallis dignissim malesuada commodo ultrices.<span class="quotation"> &#12319;</span></p>
+							<h6>Name</h6>
+							<p> CEO </p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- CAROUSEL INDICATORS -->
+				<div class="carousel-indicators">
+					<button type="button" data-target="#testimonialCarousel" data-bs-slide-to="0" class="btn active m-2"></button>
+					<button type="button" data-target="#testimonialCarousel" data-bs-slide-to="1" class="btn m-2"></button>
+					<button type="button" data-target="#testimonialCarousel" data-bs-slide-to="2" class="btn m-2"></button>
+					<button type="button" data-target="#testimonialCarousel" data-bs-slide-to="3" class="btn m-2"></button>
+				</div>
+
+				<!-- CAROUSEL CONTROLS -->
+				<button style="margin-left: -100px; color: #FD6F00;" class="carousel-control-prev" type="button" data-bs-slide="prev" data-bs-target="#testimonialCarousel"><span class="me-5 bi bi-caret-left"></span></button>
+				<button style="margin-right: -100px; color:#FD6F00" class="carousel-control-next" type="button" data-bs-slide="next" data-bs-target="#testimonialCarousel"><span class="ms-5 bi bi-caret-right"></span></button>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- 			 CONTACT STARTS 				-->
+	<div style="margin-top: 150px; margin-bottom: 75px;" class="d-flex flex-column justify-content-center align-items-center">
+		<div><h1 style="font-family: Poppins;">Lets Design Together</h1></div>
+		<div class="w-75 mb-5"><p class="text-center" style="font-family: 'Verdana';">Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. Aliquet donec morbi convallis pretium. Etiam iaculis dolor vitae mauris</p></div>
+		<div class="w-75">
+			<form>
+				<div class="d-flex flex-row flex-fill-1 justify-content-center align-items-center">
+					<div class="w-50 me-4">
+						<input type="email" class="form-control bg-light" placeholder="Enter Your Email" name="email" />
+					</div>
+					<div>
+						<button type="submit" class="btn" style="background-color: #FD6F00; color:white; font-weight:bold;">Contact Me</button> 
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- Footer Starts -->
+<div style="background-color:#F8F8F8; margin-top: 75px;" class="d-flex flex-column justify-content-between align-self-center">
+	<!-- Logo and Name -->
+	<div style="margin-top: 75px;" class="d-flex flex-row justify-content-center align-self-center">
+		<div>
+			<svg width="50px" height="50px">
+				<circle cx="25" cy="25" r="25" fill="#fd6f00" />
+				<text style="font-weight: bold;" font-family="Allura, cursive" fill="white" font-size="30px" x="50%" y="55%" text-anchor="middle" alignment-baseline="central">MK</text>
+			</svg>
+		</div>
+		<div class="ms-3">
+			<p style="font-size: 30px; font-family: Montserrat, sans-serif;"><span style="font-size: 30px; font-weight: 700;">M</span>akhan</p>
+		</div>
+	</div>
+
+	<!-- Nav Links -->
+	<div class="mt-5 mb-5 d-flex gap-4 flex-sm-column flex-lg-row justify-content-center align-self-center">
+		<a href="#" class="nav-link">Home</a>
+		<a href="#" class="nav-link">About Me</a>
+		<a href="#" class="nav-link">Services</a>
+		<a href="#" class="nav-link">Projects</a>
+		<a href="#" class="nav-link">Testimonials</a>
+		<a href="#" class="nav-link">Contact</a>
+	</div>
+
+	<!-- Social Media Links -->
+	<div class="mt-3 d-flex flex-row justify-content-center">	
+		<a class="h4 p-2 bi bi-facebook"></a>
+		<a class="h4 p-2 bi bi-instagram"></a>
+		<a class="h4 p-2 bi bi-twitter"></a>
+		<a class="h4 p-2 bi bi-linkedin"></a>
+	</div>
+
+	<p class="bg-dark mb-0 mt-5 text-center text-light p-3 " style="font-family: Poppins;">&copy; 2023 <span style="color:#FD6F00; font-weight: bold;">Makhan</span> All Rights Reserved, Inc.</p>
+</div>
+
+<script language="javascript">
+	window.onload = function(){
+		// Carousel container
+		const carouselContainer = document.querySelector(".carouselContainer")[0];
+		const carouselSlides = document.querySelector(".carouselSlide")[0];
+
+	};
+</script>
+
+</body>
+</html>
